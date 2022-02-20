@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background-color: #313131;
+  background-color: #ebebeb;
 }
 
 body .container {
@@ -12,15 +12,23 @@ body .container {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  border: 5px solid #FFFF00;
   padding: 50px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.205);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.205);
+}
+
+@media (min-width: 768px) {
+  body .container {
+    padding: 50px 100px 50px 100px;
+  }
 }
 
 body .container h1 {
   font-weight: 900;
   font-size: 30px;
+  color: #212529;
 }
 
 body .container form input[type=number], body .container form select {
@@ -36,12 +44,17 @@ body .container form input[type=number], body .container form select {
 
 body .container form input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #4f5d75;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+body .container form label {
+  font-size: 20px;
+  color: #212529;
 }
 /*# sourceMappingURL=style.css.map */
